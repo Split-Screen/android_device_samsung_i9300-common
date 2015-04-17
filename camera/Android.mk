@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-ifneq ($(filter i9300 i9305 n7100 t0lte t0lteatt t0ltetmo i605 l900 r950,$(TARGET_DEVICE)),)
+ifneq ($(filter i9300,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -33,7 +33,7 @@ LOCAL_SRC_FILES := \
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/include \
 	system/media/camera/include \
-	hardware/samsung/exynos4/hal/include
+	hardware/i9300/exynos4/hal/include
 
 LOCAL_SHARED_LIBRARIES := libutils libcutils liblog libcamera_client libhardware
 LOCAL_PRELINK_MODULE := false
