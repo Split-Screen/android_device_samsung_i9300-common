@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/smdk4412-common
+COMMON_PATH := device/samsung/i9300-common
 
 DEVICE_PACKAGE_OVERLAYS := $(COMMON_PATH)/overlay
 
@@ -186,9 +186,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Include exynos4 platform specific parts
-TARGET_HAL_PATH := hardware/samsung/exynos4/hal
-TARGET_OMX_PATH := hardware/samsung/exynos/multimedia/openmax
-$(call inherit-product, hardware/samsung/exynos4x12.mk)
+TARGET_HAL_PATH := hardware/i9300/exynos4/hal
+TARGET_OMX_PATH := hardware/i9300/exynos/multimedia/openmax
+$(call inherit-product, hardware/i9300/exynos4x12.mk)
 
 # Include non-opensource parts
-$(call inherit-product, vendor/samsung/smdk4412-common/common-vendor.mk)
+$(call inherit-product, vendor/samsung/i9300-common/common-vendor.mk)
